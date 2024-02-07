@@ -1,0 +1,46 @@
+.footerParentDiv {
+  width: 100vw;
+  margin-top: 20px;
+}
+.footerParentDiv .content {
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: #ebeeef;
+padding: 16px;
+}
+.footerParentDiv .content .heading {
+font-size: 14px;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+.footerParentDiv .footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background: #002f34;
+color: whitesmoke;
+padding-right: 92px;
+padding-left: 92px;
+}
+
+.footerParentDiv .footer p {
+margin: 0;
+}
+.icone{
+margin-left: 5px;
+height: 30px;
+width: 30px;
+}
+
+li{
+font-size: 12px;
+font-weight: 400;
+margin-top: 5px;
+}
+
+.container{
+margin-top: 90px;
+}
