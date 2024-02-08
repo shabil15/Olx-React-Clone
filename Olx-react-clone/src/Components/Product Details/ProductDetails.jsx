@@ -7,7 +7,10 @@ import { useEffect, useState } from 'react';
 import { db } from '../Firebase/Config';
 import { PostContext } from '../Firebase/postContext';
 import { useContext } from 'react';
+import { AiOutlineShareAlt } from "react-icons/ai";
+import { IoMdHeartEmpty } from "react-icons/io";
 
+import { IoIosArrowForward } from "react-icons/io";
 function ProductDetais() {
 
     const usersCollectionRef = collection(db, 'Users');
@@ -46,7 +49,7 @@ function ProductDetais() {
             <Header />
             <div className="viewParentDiv mx-20">
                 {postDetails ? (
-                    <div className='flex container mt-10'>
+                    <div className='flex  container mt-10'>
                         <div className="imageShowDiv">
                             <img src={postDetails.url} alt="" />
                         </div>
@@ -64,6 +67,7 @@ function ProductDetais() {
                                         <p>Seller details</p>
                                         <p>{user.name}</p>
                                         <p>{user.mobile}</p>
+                                      <div className='px-2 py-2 border border-black cursor-pointer flex justify-center font-bold mt-1 rounded-md'>Chat with Seller</div>  
                                     </div>
                                 );
                             })}
@@ -71,10 +75,10 @@ function ProductDetais() {
                         </div>
                     </div>
                 ) : (
-                    <p>No product details available</p>
+                    <p>No product details available</p> 
                 )}
             </div>
-            <Footer />
+                       <Footer />
         </>
     );
 }
