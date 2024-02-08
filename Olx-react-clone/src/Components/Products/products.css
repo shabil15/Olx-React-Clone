@@ -1,0 +1,94 @@
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+   /* Distribute items evenly */
+  max-width: 1250px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container on the page */      
+  column-gap: 12px;
+  row-gap: 12px;
+  
+}
+
+.product-item {
+  width: 290px;
+  height: 255px;
+  margin-bottom: 16px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; /* Ensure each item doesn't exceed its own width */
+  box-sizing: border-box; /* Include padding and border in the width */
+  /* Additional styling for your product item */
+}  
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+  height: 260px;
+  max-height: 330px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-image-container {
+  width: 100%;
+  height: 64%;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-icon {
+  font-size: 40px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 17px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #090c0c;
+  cursor: default;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.card-des {
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  margin: 0;
+  font-size: 13px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(0, 47, 52, 0.64);
+  cursor: default;
+}
+
+.titel-text{
+  color: rgb(0, 47, 52);
+}
