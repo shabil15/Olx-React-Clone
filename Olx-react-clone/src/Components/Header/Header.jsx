@@ -32,7 +32,7 @@ function Header() {
     }
 
     return (
-        <div className="headerParentDiv px-32">
+        <div className="headerParentDiv ">
             <div className="headerChildDiv ">
                 <div className="brandName">
                     <img style={{ width: '50px', height: '30px' }} src="\public\OLX-Symbol.png" alt="" />
